@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular Puntos de Futbol</title>
+  </head>
+  <body>
+    <h1>Programa Calcular Puntoes de un Equipo de Futbol</h1>
+    <script>
+      function saltarLinea() {
+        document.write('<br>');
+      }
+
+      function imprimir(frase) {
+        document.write('<h2>', frase, '<h2>');
+        saltarLinea();
+      }
+
+      let victorias = parseInt(prompt('Ingresa la cantidad de victorias'));
+      let empates = parseInt(prompt('Ingresa la cantidad de empates'));
+
+      let puntosTotal = victorias * 3 + empates;
+
+      imprimir(`El total de puntos del equipo es de: ${puntosTotal}`);
+
+      let puntosAñoPasado = 25;
+
+      if (puntosTotal > puntosAñoPasado) {
+        imprimir('El equipo esta por encima del puntaje del año pasado');
+      }
+      if (puntosTotal < puntosAñoPasado) {
+        imprimir('El equipo esta por debajo del puntaje del año pasado');
+      }
+      if (puntosTotal === puntosAñoPasado) {
+        imprimir('El equipo tiene el mismo puntaje que el año pasado');
+        5;
+      }
+    </script>
+  </body>
+</html>

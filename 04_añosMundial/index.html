@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular Años Mundial</title>
+  </head>
+  <body>
+    <h1>Calcular Años Mundial</h1>
+    <script>
+      function saltarLinea() {
+        document.write('<br>');
+      }
+
+      function imprimir(frase) {
+        document.write('<li>', frase);
+        saltarLinea();
+      }
+
+      let anhoMundial = 1930;
+
+      let añoLimite = parseInt(prompt('Ingrese el año limite para calcular'));
+
+      while (anhoMundial <= añoLimite) {
+        imprimir(`Hubo mundial de la Fifa en el año ${anhoMundial}`);
+        anhoMundial = anhoMundial + 4;
+      }
+
+      imprimir('Fin');
+    </script>
+  </body>
+</html>
